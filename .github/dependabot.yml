@@ -6,7 +6,7 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
     ignore:
       # Os tipos acompanham a menor versão do Node que o Habblaud suporta (engines: >=22.12). Com os de uma versão
       # mais nova, o typecheck deixaria passar APIs que não existem nela. Sobe à mão, junto com o engines e o CI.
@@ -17,7 +17,7 @@ updates:
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
     ignore:
       # A imagem fica numa versão LTS do Node. Trocar de versão principal (ex.: 24 -> 26 quando o 26 virar LTS) é à mão.
       - dependency-name: "node"
@@ -27,4 +27,4 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
